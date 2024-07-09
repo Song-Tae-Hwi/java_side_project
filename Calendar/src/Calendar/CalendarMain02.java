@@ -22,7 +22,7 @@ import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.border.Border;
 
-public class CalendarMain extends JFrame {
+public class CalendarMain02 extends JFrame {
     Calendar cal;
     JPanel first_panel; //top, middle 패널을 담을 공간
     JPanel top_panel; // 이전, 다음 버튼과 년도객체담을 panel
@@ -42,7 +42,7 @@ public class CalendarMain extends JFrame {
     int lastDay;
     int clickedDay;
 
-    public CalendarMain() {
+    public CalendarMain02() {
         // Frame 기본설정
         setSize(1200, 700);
         setLayout(new BorderLayout());
@@ -214,7 +214,7 @@ public class CalendarMain extends JFrame {
             			midLabel.setOpaque(true);
             			midLabel.repaint();
             			selecteLabel=midLabel;
-            			CalendarMain.this.clickedDay = clickedDay;
+            			CalendarMain02.this.clickedDay = clickedDay;
             			System.out.println("좌클릭 이벤트 발생 : " +year + "-" + setZero_Month(month) + "-" + setZero_Month(clickedDay));                     
             		}
             	}
